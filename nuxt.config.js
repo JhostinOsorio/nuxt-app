@@ -42,16 +42,15 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  router: [
-    {
-      path: '/',
-      name: 'home',
-      component: 'pages/index.vue'
-    },
-    {
-      path: '/about',
-      name: 'sss',
-      component: 'pages/about.vue'
-    }
-  ]
+  buildModules: [
+    // Doc: https://github.com/nuxt-community/eslint-module
+    [
+      '@nuxtjs/router',
+      {
+        path: 'router',
+        fileName: 'index.js',
+        keepDefaultRouter: true,
+      },
+    ],
+  ],
 }

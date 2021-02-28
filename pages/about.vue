@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Esta es una nueva página de About</h1>
-        <nuxt-link to="/">Regresar</nuxt-link>
+        <nuxt-link :to="{name: 'home'}">Regresar</nuxt-link>
     </div>
 </template>
 
