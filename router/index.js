@@ -36,19 +36,6 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
 
     return new Router({
         ...options,
-        // routes: [
-        //     {
-        //         path: '/',
-        //         name: 'home',
-        //         component: Index,
-        //     },
-        //     {
-        //         path: '/about',
-        //         name: 'about',
-        //         component: About,
-        //     }
-        // ],
         routes: [...routesDynamic]
-        // routes: options.routes
     });
 }
